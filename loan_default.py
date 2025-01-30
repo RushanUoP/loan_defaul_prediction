@@ -96,7 +96,7 @@ def main():
     plt.title('Loan Approval Status Distribution')
 
     # Display the plot in Streamlit
-    #st.pyplot(fig_loan_status)
+    st.pyplot(fig_loan_status)
 
         # Create boxplots for numeric columns
     numeric_columns = df.select_dtypes(include=['float64', 'int64']).columns
@@ -120,8 +120,8 @@ def main():
     plt.tight_layout()
 
     # Display in Streamlit
-    st.write("Boxplots of Numeric Features")
-    st.pyplot(fig_outliers)
+    #st.write("Boxplots of Numeric Features")
+    #st.pyplot(fig_outliers)
 
         # Create scaler
     scaler = RobustScaler()
