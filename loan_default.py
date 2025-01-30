@@ -96,7 +96,7 @@ def main():
     plt.title('Loan Approval Status Distribution')
 
     # Display the plot in Streamlit
-    st.pyplot(fig_loan_status)
+    #st.pyplot(fig_loan_status)
 
         # Create boxplots for numeric columns
     numeric_columns = df.select_dtypes(include=['float64', 'int64']).columns
